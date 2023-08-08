@@ -2,8 +2,12 @@
     text-decoration: none;
 }
 .header {
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns:
+    max-content
+    1fr
+    max-content;
+    align-items: center;
     margin: 92px 49px 92px 51px;
 
 
@@ -19,30 +23,54 @@
     padding: 0px 50px 180px;
 
 }
-
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
 .header__logo-image {
     width: 148px;
     height: 105px;
-    
 }
 
 .header__menu{
-    margin: 43px 0px 45px 0px;
-    
+    display: flex;
+    gap: 31.5px; 
 }
+
+.header__link__no__bullit{
+    list-style:none;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
 .header__link{
-    display: inline;
+    list-style:circle;
+    text-decoration: underline;
     
-}
+    text-underline-offset: 4px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
 .address{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5px 0px 7px 0px;
-        
+    margin: 5px 0px 7px 0px;      
 }
+
 .header__link_active{
     text-decoration: underline;
+    text-decoration-thickness: 1px;
     text-underline-offset: 4px;
     color: #000;
     font-family: Raleway;

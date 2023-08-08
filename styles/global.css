@@ -17,7 +17,7 @@ h4,
 h5,
 h6,
 p,
-address
+address,
 ul,
 ol,
 li,
@@ -25,12 +25,15 @@ blockquote {
   margin: 0;
   padding: 0;
 }
+
+
 address{
   font-family: Raleway;
   font-style: normal;
   text-decoration: none;
 
 }
+
 a {
   color: inherit;
 }
