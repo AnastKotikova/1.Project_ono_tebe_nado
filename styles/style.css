@@ -13,7 +13,12 @@
 
 }
 .cover{
+    min-height: 757px;
     padding:0px;
+    background-image:url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: 100% auto;
 }
 .lots {
     padding: 180px 50px 181px;
