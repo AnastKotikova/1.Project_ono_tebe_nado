@@ -1,7 +1,9 @@
 *{
     text-decoration: none;
 }
-
+body{
+    max-width: 1440px;
+}
 .header {
     display: grid;
     grid-template-columns:
@@ -71,16 +73,32 @@
 }
 /* Все свойства header - конец */
 
+.overlay{
+    
+    background-color: rgb(0,0,0,0.6);
+    position: absolute;
+    z-index:-1;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    
+}
 
 .cover{
     min-width: 1440px;
-    min-height: 757px;
+    max-height: 757px;
     padding:0px;
     background-image:url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position:center center;
     background-size: 100% auto;
-}
+    position: relative;
+    z-index: -2;
+   }
+
+
+   
 /* Все свойства cover  - начало*/
 .cover__title{
     
@@ -125,9 +143,56 @@
     
 }
 
-/* Все свойства cover  - конец*/
+.cover__description{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 78px; 
+    position:absolute;
+    bottom: 50px;
+    left: 422px;
+    z-index: 1;
+   
+  }
+
+.cover__description-text{
+    display: block;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+    word-spacing:18px;
+    
+    
+}
+
+.bet-button{
+    background: transparent;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #FFF;
+    padding: 12px 32px;
+    
+}
+
+
+/* Все свойства cover - конец */
+    
+
+
 .lots {
     padding: 180px 50px 181px;
+    max-width: 1340px;
+    max-height: 579px;
+    
 }
 
 .about {
