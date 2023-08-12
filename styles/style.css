@@ -13,6 +13,7 @@ body{
     max-content;
     align-items: center;
     margin: 92px 49px 92px 51px;
+    justify-content: space-between;
 
 }
 
@@ -20,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items:start;
+    padding-right: 150px;
 }
 .header__logo-image {
     width: 148px;
@@ -57,8 +59,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5px 0px 7px 0px;      
-}
+    margin: 5px 0px 7px 0px;     
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px; /* 135% */ 
+    }
 
 .header__link_active{
     text-decoration: underline;
@@ -218,6 +226,7 @@ body{
     text-decoration-line: underline;
     text-transform: uppercase;
     padding: 50px 40px 0px ;
+    text-underline-offset: 3px;
     
 } 
 .card__text{
@@ -322,10 +331,10 @@ body{
 }
 /* Все свойства about - конец */
 
+
+
 /* Все свойства footer - начало */
 
-
-/* Все свойства footer - конец */
 .footer{
     display: grid;
     grid-template-columns:
@@ -343,7 +352,7 @@ body{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     list-style: none;
-    padding-left:30px;
+    
 }
 
 .footer__menu-list-item{
@@ -377,13 +386,10 @@ body{
     font-weight: 400;
     line-height: normal;
    
- } */
+ } 
 
 .footer__social-icon
 {
     height: 48px;
 }
-
-
-
-
+/* Все свойства footer - конец */
